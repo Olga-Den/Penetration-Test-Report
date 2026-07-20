@@ -1,3 +1,12 @@
+## vm-lab-baseline-security-audit-kali-ubuntu-windows-tails
+Przygotowanie i audyt bazowej konfiguracji bezpieczeństwa czterech maszyn wirtualnych (Kali Linux, Ubuntu Server, Windows 11, Tails) w VirtualBox — weryfikacja domyślnych usług, otwartych portów, reguł firewall, uprawnień SUID oraz mechanizmu AppArmor.<br/> 
+Narzędzia: VirtualBox, Nmap, iptables, ufw, netstat/ss, systemctl, AppArmor, Windows Firewall (netsh advfirewall).
+## centralized-log-collection-rsyslog-windows-linux-analysis
+Konfiguracja centralnego serwera logowania (rsyslog na Kali) zbierającego logi z Ubuntu Server (auth.log, syslog, Apache, vsftpd, MariaDB) oraz Windows 11 (NxLog → rsyslog, Event Viewer), z analizą zdarzeń startowych, błędów/ostrzeżeń, prób logowania SSH (brute-force) oraz ruchu HTTP/FTP.<br/> 
+Narzędzia: rsyslog, NxLog, journalctl, Event Viewer, grep, tcpdump, Wireshark, logrotate.
+## network-traffic-capture-analysis-nmap-tcpdump-wireshark
+Przechwytywanie i analiza ruchu sieciowego między Kali Linux a Ubuntu Server: skanowanie portów nmap (SYN/NULL/XMAS), brute-force SSH (nmap ssh-brute + tcpdump), pasywny fingerprinting OS narzędziem p0f oraz analiza gotowych plików pcap w Wireshark/tshark (DHCP, NBNS, strumienie HTTP, Kerberos) wraz z ruchem TLS z maszyny Windows. <br/>
+Narzędzia: tcpdump, Nmap, p0f, Wireshark, tshark, tcpflow.
 ## windows-linux-epp-antivirus-detection-testing
 Testowanie skuteczności systemów EPP (Endpoint Protection) na Windows 10/11 (Microsoft Defender) oraz Linux Server (ClamAV) z wykorzystaniem pliku testowego EICAR oraz próbek malware dostarczonych w archiwach chronionych hasłem. Porównano detekcję lokalną (sygnaturową) z wynikami analizy w VirusTotal (70+ silników AV + sandbox behawioralny), wykazując różnicę między ochroną on-access (Windows Defender) a on-demand (ClamAV). Zweryfikowano również zdolność ClamAV do wykrywania malware pisanego pod Windows na serwerach Linux pełniących rolę bramy plikowej/pocztowej. <br/>
 Narzędzia: Microsoft Defender, ClamAV (clamscan), VirusTotal, 7-Zip, EICAR test file.
