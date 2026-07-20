@@ -1,3 +1,8 @@
+# Penetration_Test_Report
+Przeprowadzono kompleksowy test penetracyjny maszyny Linux (ABDUCTED, Hack The Box) w metodyce black-box, obejmujący rekonesans, enumerację usług SMB/Samba i SSH, eksploitację oraz działania post-exploitation.<br/> 
+W trakcie testu zidentyfikowano i zweryfikowano krytyczną podatność RCE w usłudze drukowania Samba, którą wykorzystano do uzyskania zdalnego dostępu (reverse shell). Po uzyskaniu dostępu przeprowadzono lokalną enumerację systemu, w wyniku której odnaleziono i odszyfrowano poświadczenia backupowe zapisane w pliku konfiguracyjnym. Dodatkowo zidentyfikowano błędy konfiguracyjne dotyczące anonimowego dostępu SMB, braku wymuszonego podpisywania SMB, słabej polityki haseł oraz niebezpiecznej konfiguracji SSH i PAM.<br/> 
+Wyniki testu udokumentowano w formie profesjonalnego raportu technicznego zawierającego opis podatności, dowody eksploatacji, ocenę ryzyka wg CVSS v4.0 oraz rekomendacje naprawcze z priorytetyzacją działań.<br/> 
+Narzędzia: Nessus, Nmap, SMBClient, Enum4linux, RPCClient, NetExec, LinPEAS
 ## vm-lab-baseline-security-audit-kali-ubuntu-windows-tails
 Przygotowanie i audyt bazowej konfiguracji bezpieczeństwa czterech maszyn wirtualnych (Kali Linux, Ubuntu Server, Windows 11, Tails) w VirtualBox - weryfikacja domyślnych usług, otwartych portów, reguł firewall, uprawnień SUID oraz mechanizmu AppArmor.<br/> 
 Narzędzia: VirtualBox, Nmap, iptables, ufw, netstat/ss, systemctl, AppArmor, Windows Firewall (netsh advfirewall).
