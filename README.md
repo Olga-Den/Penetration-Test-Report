@@ -1,5 +1,5 @@
 ## vm-lab-baseline-security-audit-kali-ubuntu-windows-tails
-Przygotowanie i audyt bazowej konfiguracji bezpieczeństwa czterech maszyn wirtualnych (Kali Linux, Ubuntu Server, Windows 11, Tails) w VirtualBox — weryfikacja domyślnych usług, otwartych portów, reguł firewall, uprawnień SUID oraz mechanizmu AppArmor.<br/> 
+Przygotowanie i audyt bazowej konfiguracji bezpieczeństwa czterech maszyn wirtualnych (Kali Linux, Ubuntu Server, Windows 11, Tails) w VirtualBox - weryfikacja domyślnych usług, otwartych portów, reguł firewall, uprawnień SUID oraz mechanizmu AppArmor.<br/> 
 Narzędzia: VirtualBox, Nmap, iptables, ufw, netstat/ss, systemctl, AppArmor, Windows Firewall (netsh advfirewall).
 ## centralized-log-collection-rsyslog-windows-linux-analysis
 Konfiguracja centralnego serwera logowania (rsyslog na Kali) zbierającego logi z Ubuntu Server (auth.log, syslog, Apache, vsftpd, MariaDB) oraz Windows 11 (NxLog → rsyslog, Event Viewer), z analizą zdarzeń startowych, błędów/ostrzeżeń, prób logowania SSH (brute-force) oraz ruchu HTTP/FTP.<br/> 
